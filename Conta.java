@@ -1,4 +1,4 @@
-public class Conta {
+public class Conta implements IConta {
     private int agencia;
     private int numeroDaConta;
     private double saldo;
@@ -15,18 +15,22 @@ public class Conta {
         return saldo;
     }
 
+    @Override
     public void sacar(double valor) {
-        double novoSaldo = getSaldo() - valor;
-        System.out.println(novoSaldo);
+        // TODO Auto-generated method stub
+
     }
 
+    @Override
     public void depositar(double valor) {
-        double novoSaldo = getSaldo() + valor;
-        System.out.println(novoSaldo);
+        // TODO Auto-generated method stub
+
     }
 
-    public void transferir(double valor) {
-        double novoSaldo = getSaldo() - valor;
-        System.out.println(novoSaldo);
+    @Override
+    public void transferir(double valor, Conta contaDestino) {
+        // TODO Auto-generated method stub
+
     }
+
 }
