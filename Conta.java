@@ -1,4 +1,4 @@
-public class Conta implements IConta {
+public abstract class Conta implements IConta {
     private int agencia;
     private int numeroDaConta;
     private double saldo;
