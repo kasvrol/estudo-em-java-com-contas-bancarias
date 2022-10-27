@@ -41,7 +41,7 @@ public abstract class Conta implements IConta {
         contaDestino.depositar(valor);
     }
 
-    protected void imprimirExtrato() {
+    protected void informacoesDaOperacao() {
         System.out.println(String.format("Agencia: %d", this.agencia));
         System.out.println(String.format("Número: %d", this.numeroDaConta));
         System.out.println(String.format("Saldo atual da conta: %2f", this.saldo));
