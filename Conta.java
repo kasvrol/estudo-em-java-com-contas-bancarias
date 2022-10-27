@@ -1,7 +1,7 @@
 public abstract class Conta implements IConta {
-    private int agencia;
-    private int numeroDaConta;
-    private double saldo;
+    protected int agencia;
+    protected int numeroDaConta;
+    protected double saldo;
 
     public int getAgencia() {
         return agencia;
