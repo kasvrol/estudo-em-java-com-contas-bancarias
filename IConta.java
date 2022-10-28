@@ -1,7 +1,7 @@
 public interface IConta {
-    void sacar(double valor);
+    String cliente(String nome);
+
+    String banco(String nome);
 
     void depositar(double valor);
-
-    void transferir(double valor, Conta contaDestino);
 }
